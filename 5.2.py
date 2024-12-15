@@ -8,8 +8,9 @@ class Circle:
 r=input('Введите первый радиус: ')
 Circle1=Circle(r)
 Circle1.get_radius()
-r1=input('Введите новый радиус: ')
-Circle1=Circle(r1)
-Circle1.get_radius()
-Circle1.set_radius(r1)
+if input('Если хотоие изменить радиус введите 1, а 0 если нет: ') == '1':
+    r1=input('Введите новый радиус: ')
+    Circle1=Circle(r1)
+    Circle1.get_radius()
+    Circle1.set_radius(r1)
 print('Ваш радиус: ', Circle1.get_radius())
